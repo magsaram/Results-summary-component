@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: hsl(221, 100%, 96%);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+}
+.results {
+  background-image: linear-gradient(#6943ff 0%, #2f2ce9 100%);
+  border-radius: 0 0 32px 32px;
+  text-align: center;
+  padding: 0 20px;
+}
+.results h2 {
+  margin: 24px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #cac9ff;
+}
+.score {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 24px auto;
+  background-image: linear-gradient(#4d21c9 0%, #2521c900 100%);
+  border-radius: 50%;
+}
+.score p:first-child {
+  font-size: 56px;
+  font-weight: 800;
+  color: white;
+  transform: translateY(+30%);
+  margin-bottom: 20px;
+}
+.score p:last-child {
+  font-size: 16px;
+  font-weight: 700;
+  color: #cac9ff;
+}
+.result {
+  margin-bottom: 8px;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+.results p:last-child {
+  margin-bottom: 40px;
+  font-size: 16px;
+  color: #cac9ff;
+}
+.summary {
+  padding: 0 30px;
+}
+.summary h2 {
+  margin: 24px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #303b59;
+}
+.category {
+  display: flex;
+  width: 100%;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  padding: 16px;
+  font-weight: 700;
+}
+section > div p:nth-child(2) {
+  flex-grow: 1;
+}
+.reaction {
+  background-color: hsla(0, 100%, 67%, 0.08);
+  color: hsl(0, 100%, 67%);
+}
+.memory {
+  background-color: hsl(39, 100%, 56%, 0.08);
+  color: hsl(39, 100%, 56%);
+}
+.verbal {
+  background-color: hsl(166, 100%, 37%, 0.08);
+  color: hsl(166, 100%, 37%);
+}
+.visual {
+  background-color: hsl(234, 85%, 45%, 0.08);
+  color: hsl(234, 85%, 45%);
+}
+img {
+  margin-right: 12px;
+}
+.black {
+  color: #303b59;
+}
+.opacity {
+  color: hsla(224, 30%, 27%, 0.5);
+}
+.summary a {
+  display: block;
+  width: 100%;
+  padding: 17px 0;
+  margin-bottom: 30px;
+  background-color: #303b59;
+  border-radius: 128px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+footer {
+  font-size: 12px;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
+@media (min-width: 750px) {
+  body {
+    justify-content: center;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    max-width: 736px;
+    border-radius: 32px;
+  }
+  .results {
+    width: 368px;
+    margin: 0;
+    border-radius: 32px;
+    padding: 0 54px;
+  }
+  .results h2 {
+    font-size: 24px;
+  }
+  .score {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 28px auto;
+  }
+  .score p:first-child {
+    font-size: 72px;
+    transform: translateY(+40%);
+    margin-bottom: 40px;
+  }
+  .score p:last-child {
+    font-size: 16px;
+    font-weight: 700;
+    color: #cac9ff;
+  }
+  .result {
+    margin-bottom: 14px;
+    font-size: 32px;
+  }
+  .results p:last-child {
+    font-size: 18px;
+  }
+  .summary {
+    width: 50%;
+    padding: 0 40px;
+  }
+  .summary h2 {
+    margin: 38px 0 28px 0;
+    font-size: 24px;
+  }
+  .summary a {
+    margin-top: 30px;
+  }
+  .summary a:hover {
+    background-image: linear-gradient(#6943ff 0%, #2f2ce9 100%);
+  }
+}
